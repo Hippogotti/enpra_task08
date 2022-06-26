@@ -42,3 +42,22 @@ def TrueFalse_func(num) :
             print("HINT 2 : One number's position is true.")
         else :
             print("Each number's position is uncollect.")
+
+#1つ目の数値検討
+player_num1 = int(input("Please enter a 3-digit number. (first): "))
+TrueFalse_func(player_num1)
+#2つ目の数値検討
+player_num2 = int(input("Please enter a 3-digit number. (second): "))
+TrueFalse_func(player_num2)
+#3つ目の数値検討
+player_num3 = int(input("Please enter a 3-digit number. (third): "))
+TrueFalse_func(player_num3)
+#4つ目の数値検討
+player_num4 = int(input("Please enter a 3-digit number. (fourth): "))
+TrueFalse_func(player_num4)
+#5つ目の数値検討
+player_num5 = int(input("Please enter a 3-digit number. (fifth): "))
+TrueFalse_func(player_num5)
+
+#5回で終わらなかったら負け、正解の表示
+print("YOUR LOSS ! True number is :", collect_num)
