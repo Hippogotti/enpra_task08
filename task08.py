@@ -10,9 +10,6 @@ k = random.randint(0, 9)
 #正解の3桁の整数の決定
 collect_num = 100 * i + 10 * j + k 
 
-#正解の3桁が表示されるかを確認
-print(collect_num)
-
 #tuple型に文字列を変換
 def tuple_num(num) : 
     return math.floor(num / 100), math.floor(num % 100 / 10), math.floor(num % 10)
