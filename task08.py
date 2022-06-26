@@ -26,3 +26,19 @@ def TrueFalse_func(num) :
     #不正解のとき
     else:
         print("Your answer is false.")
+        #HINT1を与える条件分岐
+        if (i in tuple_num(num)) and (j in tuple_num(num)) and (k in tuple_num(num)) :
+            print("HINT 1 : Three numbers are true.")
+        elif ((i in tuple_num(num)) and (j in tuple_num(num))) or ((j in tuple_num(num)) and (k in tuple_num(num))) or ((k in tuple_num(num)) and (i in tuple_num(num))) :
+            print("HINT 1 : Two numbers are true.")
+        elif (i in tuple_num(num)) or (j in tuple_num(num)) or (k in tuple_num(num)) :
+            print("HINT 1 : One number is true.")
+        else :
+            print("Each number is uncollect.")        
+        #HINT2を与える条件分岐
+        if (tuple_num(num)[0] == i and tuple_num(num)[1] == j) or (tuple_num(num)[1] == j and tuple_num(num)[2] == k) or (tuple_num(num)[2] == k and tuple_num(num)[0] == i) :
+            print("HINT 2 : Two numbers' position are true.")
+        elif tuple_num(num)[0] == i or tuple_num(num)[1] == j or tuple_num(num)[2] == k :
+            print("HINT 2 : One number's position is true.")
+        else :
+            print("Each number's position is uncollect.")
